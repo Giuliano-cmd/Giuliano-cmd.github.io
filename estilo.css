@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+header{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 0.5fr auto;
+}
+.titulo{
+    font-family: 'DynaPuff', cursive;
+    color: white;
+    margin: 0px;
+    width: 10em;
+    grid-column: 2;
+}
+#logo{
+    grid-column: 1;
+}
+nav{
+    text-align: center;
+    margin: 0px;
+    background-color: #fcb69f;
+    position: sticky;
+    top: 0px;
+}
+.navprinc{
+    padding: 0px;
+    list-style: none;
+}
+.navprinc, li{
+    display: inline-block;
+}
+.navprinc, a{
+    margin: 20px;
+    text-decoration: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    color: white;
+}
+#principalimg{
+    display: grid;
+    margin-bottom: 40px;
+}
+footer{
+    text-align: center;
+}
+#imgprinc1{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+}
+#imgprinc2{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+}
+#imgprinc3{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+}
+#imgprinc4{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+}
+p{
+    display: inline-block;
+    display: unset;
+}
+.imgenlaces{
+    margin: 0;
+}
+.redsocial{
+    padding: 0;
+    border: 0px;
+}
+i{
+    font-size: 48px;
+}
