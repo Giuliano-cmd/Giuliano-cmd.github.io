@@ -14,9 +14,6 @@ header{
     width: 10em;
     grid-column: 2;
 }
-#logo{
-    grid-column: 1;
-}
 nav{
     text-align: center;
     margin: 0px;
