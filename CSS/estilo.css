@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+header{
+    display: flexbox;
+    text-align: center;
+}
+
+/* Titulo */
+.titulo{
+    font-family: 'DynaPuff', cursive;
+    color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+/* Imagenes de inicio*/
+#principalimg{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.carrusel1{
+    grid-column: 2;
+}
+
+.carrusel2{
+    grid-column: 3;
+
+}
+
+.carrusel3{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.carrusel4{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Redes sociales*/
+i{
+    font-size: 48px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer{
+    margin-top: 20px;
+    display: flexbox;
+    text-align: center;
+}
