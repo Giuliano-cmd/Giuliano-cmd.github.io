@@ -72,7 +72,15 @@ function finalizo(){
         alert("Usted no hizo ninguna compra, por favor realice alguna compra.")
     }
     else{
-        alert("Su compra total fue de $" + total + ". Total de prendas: " + i + ". Listado de compras: " + prendas + ". Gracias por su compra.");
+        nya = prompt("Ingrese nombre y apellido: ")
+        while (nya == ""){
+            nya = prompt("Ingrese nombre y apellido: ")
+        }
+        correo = prompt("Ingrese correo: ")
+        while (correo == ""){
+            correo = prompt("Ingrese correo: ")
+        }
+        alert("Su compra total fue de $" + total + ". Total de prendas: " + i + ". Listado de compras: " + prendas + ". Contáctenos para el envío. Gracias por su compra.");
         total = 0;
         i = 0;
         prendas = [];
@@ -85,6 +93,7 @@ function reinicio(){
         alert("Usted no hizo ninguna compra, no hay compra que reiniciar. Por favor realice alguna compra.")
     }
     else{
+        prompt("Ingrese correo: ")
         alert("Su compra fue reiniciada");
         total = 0;
         i = 0;
