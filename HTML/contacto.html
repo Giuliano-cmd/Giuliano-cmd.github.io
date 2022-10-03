@@ -5,76 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/CSS/estilo.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title> Contacto </title>
 </head>
 <body>
     <header>
-        <h1 class="titulo">GINASHOP</h1>
+        <h1 class="titulo">GINASHOP Tienda de ropa</h1>
     </header>
-
+    <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-lg"
-        style="position: sticky; background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); font-family: 'DynaPuff', cursive;">
+        style="position: sticky; top: 0px; background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); font-family: 'Roboto Condensed', sans-serif, cursive; z-index: 1; text-align: center;  min-width: 400px;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="/Img/logo.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="/index.html"><img src="/Img/Logo.jpg" alt="Logo"
+                    style="width: 6em; height: 6em; border-style: dashed; border-color: #717D7E;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pantalones</a></li>
-                            <li><a class="dropdown-item" href="#">Camperas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Remeras</a></li>
-                            <li><a class="dropdown-item" href="#">Buzos</a></li>
-                        </ul>
+                        <a class="nav-link" aria-current="page" href="/index.html" style="font-size: 20px; color: #717D7E;">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="/HTML/prendas.html" style="font-size: 20px; color: #717D7E;">Prendas</a>
                     </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" style="background-color: #F5CBA7 ; border-color: #F5CBA7 ; color: black;">Buscar</button>
-                </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/contacto.html" style="font-size: 20px; color: #717D7E;">Contacto</a>
+                    </li>
             </div>
         </div>
     </nav>
-
-    <main>
+    <p style="color: #717D7E; font-family: 'Roboto Condensed', sans-serif, cursive; font-size: 30px; text-align: center;">Mandenos su consulta o contáctenos por cualquier otro tema</p>
+    <!-- Formulario  -->
+    <main id="formulario">
         <form action="" method="post">
-            <label for="">Nombre: </label><br> 
+            <label for="">Nombre: </label><br>
             <input type="text" name="nombre" id="nombre"><br>
-            <label for="apellido">Apellido: </label><br> 
+            <label for="apellido">Apellido: </label><br>
             <input type="text" name="apellido" id="apellido"><br>
             <label for="telefono">Teléfono: </label><br>
             <input type="tel" name="telefono" id="telefono"><br>
             <label for="correo">Correo electrónico: </label><br>
             <input type="text" name="correo" id="correo"><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Cancelar">
-            
+            <label for="consulta">Consulta: </label><br>
+            <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="400"></textarea><br>
+            <input type="submit" value="Enviar" style="background-color: peru; border-style: none; border-radius: 5px;">
+            <input type="reset" value="Cancelar" style="background-color: peru; border-style: none; border-radius: 5px;">
+
         </form>
     </main>
     <footer>
         <a href="https://www.instagram.com/ginashop2022/?hl=es" target="_blank"><i class='bx bxl-instagram' style='color:#c13584'></i></a>
-        <a href=""><i class='bx bxl-whatsapp' style='color:#25d366'></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=5493364593169&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp' style='color:#25d366'></i></a>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
